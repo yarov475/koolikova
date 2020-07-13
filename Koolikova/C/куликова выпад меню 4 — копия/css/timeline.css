@@ -1,0 +1,224 @@
+
+  body{
+  background: #fff;
+  font-family:sans-serif;
+  font-weight:400;
+}
+#education-timeline{
+  
+  position:relative;
+  max-width:920px;
+  width:100%;
+  margin: 0 auto;
+  
+}
+#education-timeline .timeline-start,
+#education-timeline .timeline-end{
+  display:table;
+  font-family:sans-serif;
+  font-size:18px;
+  font-weight:900;
+  
+  background:#C5CAE9;
+  /*padding:15px 23px;*/
+  color:#fff;
+  max-width:100%;
+  width:100%;
+  text-align:center;
+  margin:0 auto;   
+}
+#education-timeline .education-center-line {
+  position:absolute;
+  width:3px;
+  height:100%;
+  top:0px;
+  left:50%;
+  margin-left:-2px;
+  background:#C5CAE9;
+  z-index:-1;
+}
+#education-timeline .education-timeline-content{
+  padding-top:47px;
+  padding-bottom:7px;
+}
+.timeline-degree{
+  width:100%;
+  height:100%;
+  position:relative;
+  overflow:hidden;
+  margin:20px 0px;  
+ 
+}
+.timeline-degree .content-left-container,
+.timeline-degree .content-right-container{
+  max-width:45%;
+  width:100%;
+}
+.timeline-degree .content-left,
+.timeline-degree .content-right{
+  position:relative;
+  width:auto;
+  border:1px solid #ddd;
+  background-color:#fff;
+  
+  /*padding: 27px 27px 25px 2px;*/
+  }
+.timeline-degree .content-left{
+  box-shadow:0 1px 25px #C5CAE9 ;
+  /*margin-right:23px;*/
+}
+.timeline-degree .content-right{
+   box-shadow:0 1px 25px  #C5CAE9;
+  /*margin-left:22px;*/
+}
+.timeline-degree p{
+  margin: 0 0 0 60px;
+  padding: 0;
+  font-weight: 400;
+  
+  color: #000;
+  font-size: 14px;
+ 
+  position: relative;
+}
+.timeline-degree  span.type{
+  position:absolute;
+  font-weight:300px;
+  font-size:18px;
+ display:table;
+  top:0px;
+  //left:-80px;
+  color:#C5CAE9;
+  
+}
+.timeline-degree .content-left-container{
+  border-radius: 20px;
+  float:left;
+  
+}
+.timeline-degree .content-right-container{
+  border-radius: 20px;
+  float:right;
+}
+timeline-degree .content-left:before,
+timeline-degree .content-right:before{
+  position:relative;
+  top:20px;
+  font-size:18px;
+  font-family:"FontAwesome";
+  color:#000;
+}
+
+
+.timeline-degree .meta-date {
+  position: absolute;
+  top: 0;
+ left: 50%;
+  width: 62px;
+  //height: 62px;
+  margin-left: -50px;
+  
+  color: #fff;
+  border-radius: 100%;
+  background: #C5CAE9;
+  padding:20px;
+}
+.timeline-degree .meta-date .year{
+  display: block;
+  text-align: center;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 40px;
+}
+.education-timeline-content .timeline-degree #last{
+  padding-bottom:35px;
+  }
+
+.timeline-degree{
+  padding-bottom:20px;
+  }
+
+
+.timeline-degree .content-left{
+  right:20px;
+}
+.timeline-degree .content-right{
+  left:20px;
+}
+ .content-left-container .content-left,
+ .content-right-container .content-right
+{
+  color:#00b0bd;
+}
+ .content-left-container .content-left
+{
+  padding-left:25px;
+}
+
+.fa,.fa-chevron-right{
+    color:#C5CAE9 !important;
+  }
+
+/* making it responssive*/
+@media only screen and ( max-width:900px )
+{
+  #education-timeline .timeline-start,
+  #education-timeline .timeline-end{
+    margin:0;
+  }
+  #education-timeline .timeline-end{
+    /*margin-left:14px;*/
+  }
+  #education-timeline .education-center-line{
+    margin-left:0;
+    left:55px;
+  }
+  .timeline-degree .meta-date{
+    margin-left:0;
+    left:7px;
+  }
+  .timeline-degree .content-left-container,
+  .timeline-degree .content-right-container{
+    max-width:100%;
+    width:auto;
+    float:none;
+    margin-left:150px;
+    min-height:53px;
+  }
+  .timeline-degree .content-left-container{
+    margin-bottom:20px;
+  }
+  timeline-degree .content-left,
+  .timeline-degree .content-right {
+    
+    padding:10px 0px 10px 5px;
+    min-height: 65px;
+  }
+  .content-left-container .content-left{
+    padding-left:5px;
+  }
+
+  .content-right-container .content-right{
+    padding-left:5px; 
+    left:-42px;
+  }
+.fa,.fa-chevron-right{
+    display:none !important;
+  }
+  }
+@media only screen and (max-width:400px){
+  .timeline-degree p{
+    margin:0;
+  }
+  .timeline-degree .content-left-container span.type{
+    display:none;
+  }
+    .timeline-degree .content-right-container span.type{
+    display:none;
+  }
+  .timeline-degree .content-right-container,
+  .timeline-degree .content-left-container{
+    min-width:200px;
+  }
+  
+}

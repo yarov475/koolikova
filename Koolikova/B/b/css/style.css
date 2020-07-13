@@ -1,0 +1,432 @@
+
+ *{ margin: 0;
+  padding: 0;
+    text-align: center;
+    color:#424242;
+ }
+ #header-img{
+  display: none;
+ }
+ .sidebar{
+    position: fixed;
+    left: 2px;
+    float: left;
+    text-align: left;
+    opacity: 0.5;
+ }
+ .consult_all{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ }
+ p {text-align: justify;}
+ .decsription{
+    text-align: left;
+ }
+
+ .menu{
+    text-transform: uppercase;
+ }
+ h2, h3 {
+    color:#212121;;
+    
+}
+
+  .success{
+    text-align: center;
+ }
+ .container{
+    margin:1em;
+ }
+ .contacts{
+    display: flex;
+    justify-content: space-around;
+ }
+ .social{
+
+   position: fixed;
+    top:50%;
+   right:  0.063em;
+       opacity: 0.5; }
+
+ /*МОДАЛЬНОЕ ОКНО*/
+/* множественные модалы */
+
+.overlay {
+   
+   /* Скрываем подложку  */
+   opacity: 0;
+   visibility: hidden;
+   
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, .5);
+   z-index: 20;
+   transition: .3s all;
+}
+
+
+/* Стили для модальных окон */
+/*МОДАЛЬНОЕ ОКНО*/
+#bg_popup{
+position: fixed;
+z-index: 99999;
+background: rgba(0, 0, 0, 0.8);
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+display: none;}
+   
+#popup {
+background:#fff;
+width: 350px;
+margin: 25% auto;
+padding: 5px 20px;
+position: relative;}
+   
+.close{
+display:block;
+position:absolute;
+top:5px;
+right:5px;
+width:20px;
+height:20px;
+color:#555;
+background:#1BA600;
+cursor:pointer;}
+
+.modal {
+   
+   /* Скрываем окна  */
+   opacity: 0;
+   visibility: hidden;
+   
+   
+   /*  Установаем ширину окна  */
+   width: 100%;
+   max-width: 500px;
+   
+   /*  Центрируем и задаем z-index */
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 30; /* Должен быть выше чем у подложки*/
+   
+   /*  Побочные стили   */
+   box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+   text-align: center;
+   padding: 30px;
+   border-radius: 3px;
+   background-color: #fff;
+   transition: 0.3s all;
+}
+
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active{
+   opacity: 1;
+   visibility: visible;
+}
+
+
+/* Стили для кнопки закрытия */
+
+.modal__cross {
+   width: 15px;
+   height: 15px;
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   fill: #444;
+   cursor: pointer;
+}
+
+ .footer{
+     display: flex;
+    justify-content: space-between;
+ }
+ .center{
+    padding-left: 15%;
+ }
+ .center-card{
+    padding-left: 40%;
+ }
+
+.refferense{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.lessons{
+    margin:20px;
+     display: flex;
+    justify-content: space-between;
+   flex-wrap: wrap;
+
+}
+ body{font-family: 'Lato', sans-serif;}
+ h1,h2,h3,h4,h5,h6{font-family: 'Roboto', sans-serif;}
+ .main{
+    padding-top: 10%;
+
+ }
+ .syply{
+     display: flex;
+    justify-content: center;
+
+ }
+  
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+a{
+    color:#000;
+}
+
+.header{
+    background-color: #fff;
+   
+    box-shadow:1px 1px 4px 0 rgba(0,0,0,.1);
+    position:fixed;
+    width:100%;
+    z-index:3;
+}
+
+.header ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    overflow:hidden;
+   
+}
+
+.header ul a{
+        display:block;
+    padding:20px;
+    text-decoration:none;
+}
+
+.header ul a:hover{
+   color:red; 
+  
+}
+
+.header .header-img{
+    color:#424242;
+    float:left;
+    display:block;
+    padding:8px 20px;
+    width: 140px;
+}
+
+.header .menu{
+    clear:both;
+    max-height:0;
+    transition:max-height .2s ease-out;
+    text-align: right;
+    font-weight: bold;
+}
+
+.header .menu-icon{
+         
+    padding: 28px 50%;
+    position:relative;
+    float:right;
+    cursor: pointer;
+}
+
+.header .menu-icon .nav-icon{
+     
+    background:#424242;
+    display:block;
+    height:2px;
+    width:18px;
+    position:relative;
+    transition:background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before{
+     
+    background:#424242;
+    content:"";
+    display:block;
+    height:100%;
+    width:100%;
+    position:absolute;
+    transition:all .2s ease-out;
+    top:5px;  
+
+}
+
+.header .menu-icon .nav-icon:after{
+    
+    background: #424242;
+    content:"";
+    display:block;
+    height:100%;
+    width:100%;
+    position:absolute;
+    transition:all .2s ease-out;
+    top:-5px;  
+
+}
+
+.header .menu-btn{
+    display:none;
+}
+
+.header .menu-btn:checked ~ .menu{
+    max-height:300px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon{
+      color:#424242;
+    background:transparent;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before{
+      color:#424242;
+    transform: rotate(-45deg);
+    top:0;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+      color:#424242;
+    transform: rotate(45deg);
+    top:0;
+}
+
+.home{ height: 100vh;
+ background: url(../img/milaBg.jpg) right no-repeat rgba(251, 246, 246, 0.23); /* Путь к фоновому рисунку */
+background-size: cover;
+   background-size: cover;
+  width: 100vh;
+  height: 100vh;
+  background-size: 60%;
+  animation: scale 5s linear;
+}
+
+@keyframes scale {
+  0% {
+    background-size: 25%;
+  }
+  100% {
+    background-size: 50%;
+  }
+}
+  
+footer{    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+.consulting{
+ justify-content: space-around; 
+display: flex;
+ text-align:center
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+  }
+.reffer{
+  margin-bottom: 2px;
+}
+
+@media (min-width:48em) {
+  h1{color:grey;}
+    .header li{
+        float:left;
+    }
+    .header li a{
+        padding:20px 30px;
+    }
+    .header .menu{
+        clear:none;
+        float:right;
+        max-height:none;
+    }
+    .header .menu-icon{
+        display:none;
+    }
+ 
+ }
+
+@media (max-width: 48em){
+  .modal{
+    background: #4DD0E1;
+     width: 80%;
+  }
+
+
+
+    body{
+      margin:0;
+      text-align: center;
+      color:#fff;}
+    .social{
+      display: none;
+    }
+
+    h1{
+      font-size: 16px
+
+    }
+    h2{
+      font-size: 12px;
+    }
+    h3{
+      font-size: 10px;
+    }
+    .home{
+      height: 30vh;
+
+    }
+    iframe{
+      width: 100%;
+      height: 100%
+    }
+    .reffer{
+      width: 100%;
+    }
+    .syply{
+      font-size: 8px;
+    }
+    .footer{
+      font-size: 8px;
+
+    }
+    .mdl-card__title-text{
+      font-size: 16px;
+    }
+
+
+    #popup{
+      width:250px;
+      font-size: 12px;
+      margin: 10% auto;
+   }
+   .advices{
+    margin: 10px;
+   }
+
+
+}
+form{
+  width: 50%;
+}
+
+      }
+   
